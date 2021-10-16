@@ -1,0 +1,18 @@
+<div class="wrapper">
+    <hr>
+    <h1 class="text-center">Birthday App</h1>
+    <hr>
+    <app-add (addUserEvent)="addUser($event)"></app-add>
+    <h3>User List</h3>
+    <hr>
+    <div >
+        <div *ngIf="this.stores.length===0; else elseBlock"><h5 class="text-secondary">Nothing to Display!!!</h5></div>
+        <ng-template #elseBlock>
+            <ul *ngFor="let store of stores; let i=index" class="list-group py-1">
+                <li class="list-group-item align-self-center">
+                    <app-view [storeAttri]="store" (storeDeleteEvent)="deleteUser($event)"></app-view>
+                </li>
+            </ul>
+        </ng-template>
+    </div>
+</div>

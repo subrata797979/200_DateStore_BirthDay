@@ -1,0 +1,17 @@
+<div class="my-5">
+    <h3>Add User</h3>
+    <hr>
+    <form (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label for="emailId" class="form-label">Name</label>
+            <input type="text" class="form-control" id="nameId" [(ngModel)]="nameVar" name="nameId">
+        </div>
+        <div class="mb-3">
+            <label for="dateId" class="form-label">Birthday</label>
+            <input type="date" class="form-control" id="dateId" [(ngModel)]="dateVar" name="dateId">
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+</div>
+
+
