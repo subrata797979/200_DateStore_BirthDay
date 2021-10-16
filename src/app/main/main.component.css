@@ -9,3 +9,15 @@
         margin: 5% 20%;
     }
 }
+
+a {
+    text-decoration: none;
+    padding: 3%;
+    border: 3px solid #11324D;
+    color: #11324D;
+    font-weight: 1000;
+}
+a:hover {
+    background-color: #11324D;
+    color: aliceblue;
+}
