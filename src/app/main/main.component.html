@@ -1,14 +1,9 @@
-<div class="wrapper">
-    <hr>
-    <h1 class="text-center">Birthday App</h1>
-    <hr>
+<div class="pb-5">
     <app-add (addUserEvent)="addUser($event)"></app-add>
     <h3 class="text-center">User List</h3>
     <hr>
-    <br>
-    <br>
     <div>
-        <div *ngIf="this.stores.length===0; else elseBlock"><h5 class="text-secondary">Nothing Here! Please Add First!!</h5></div>
+        <div *ngIf="this.stores.length===0; else elseBlock"><h5 class="text-secondary pb-5">Nothing Here! Please Add First!!</h5></div>
         <ng-template #elseBlock>
             <ul *ngFor="let store of stores; let i=index" class="list-group py-1">
                 <li class="list-group-item align-self-center">
@@ -16,12 +11,5 @@
                 </li>
             </ul>
         </ng-template>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="text-center">
-        <a href="https://github.com/subrata797979/BirthdayApp1">Visit : Project Source Code!</a>
     </div>
 </div>
